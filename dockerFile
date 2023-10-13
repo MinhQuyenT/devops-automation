@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8763
-ADD target/mpken-api-1.0-SNAPSHOT mpken-api.jar
-ENTRYPOINT ["java", "-jar","/mpken-api.jar"]
+EXPOSE 8080
+ADD target/jenkinspipeline jenkinspipeline.jar
+ENTRYPOINT ["java", "-jar","/jenkinspipeline.jar"]
